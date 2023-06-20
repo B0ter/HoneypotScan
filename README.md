@@ -1,4 +1,4 @@
-# HoneypotScanner
+# HoneypotScan
 一个蜜罐扫描器
 #
 本工具通过指纹识别的方式进行蜜罐扫描，爬虫是调用的crawlergo。
@@ -28,8 +28,8 @@
 ```shell
 pip3 install -r requirements.txt
 
+python3 HoneypotScanner.py  -t 10
 # 将待检测的IP放在iplist.txt
 # -t 自定义线程，默认为5
-python3 HoneypotScanner.py  -t 10
 ```
 
