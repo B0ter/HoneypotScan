@@ -17,7 +17,7 @@
 
 2. 把蜜罐中去请求的request提取出来作为一个字典样本，然后以这个字典作为基准去判断是否其他的网站是否存在同样的request请求。
 
-3. 爬取完毕后的数据需要进行清洗
+3. 调用crawlergo爬取完毕后的数据需要进行清洗
 
 4. 使用threadpool，进行多线程扫描，提高效率
 
@@ -28,7 +28,7 @@
 ```shell
 pip3 install -r requirements.txt
 
-python3 HoneypotScanner.py  -t 10
+python3 HoneypotScan.py  -t 10
 # 将待检测的IP放在iplist.txt
 # -t 自定义线程，默认为5
 ```
